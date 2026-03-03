@@ -2,9 +2,7 @@ import "@azure-tools/typespec-azure-core";
 import "@typespec/rest";
 import "./models.tsp";
 
-using TypeSpec.Rest;
 using TypeSpec.Http;
-using Azure.Core;
 
 namespace MapsWeather;
 

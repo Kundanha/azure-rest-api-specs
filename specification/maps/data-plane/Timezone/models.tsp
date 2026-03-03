@@ -1,9 +1,6 @@
 import "@typespec/rest";
 import "@typespec/http";
 
-using TypeSpec.Rest;
-using TypeSpec.Http;
-
 namespace MapsTimezone;
 
 /** Options for timezone information returned in the result. */
@@ -335,8 +332,8 @@ model ErrorAdditionalInfo {
   /**
    * The additional info.
    */
-  @visibility(Lifecycle.Read)
   #suppress "@azure-tools/typespec-azure-core/bad-record-type" "Existing API contract."
+  @visibility(Lifecycle.Read)
   info?: Record<unknown>;
 }
 
